@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { LocationResponse } from "@/Types/GoogleTypes";
-import Maps from "@/components/MarkMap/MarkMap";
+import MarkMap from "@/components/MarkMap/MarkMap";
 import Loading from "@/components/Loading/Loading";
 
 const Location = () => {
@@ -52,7 +52,7 @@ const Location = () => {
         </div>
       </div>
       <div className="w-full h-fit p-2 max-[768px]:p-0 border border-black">
-        <Maps position={coordinatesISS} />
+        <MarkMap position={coordinatesISS} />
       </div>
     </div>
   );

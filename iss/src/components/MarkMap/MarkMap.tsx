@@ -6,7 +6,7 @@ interface MarkMapProps {
   position: { lat: number; lng: number };
 }
 
-const MarkMapProps = ({ position }: MarkMapProps) => {
+const MarkMap = ({ position }: MarkMapProps) => {
   return (
     <APIProvider apiKey={process.env.REACT_APP_GOOGLE_API_KEY as string}>
       <div className="h-screen">
@@ -17,4 +17,4 @@ const MarkMapProps = ({ position }: MarkMapProps) => {
   );
 };
 
-export default MarkMapProps;
+export default MarkMap;

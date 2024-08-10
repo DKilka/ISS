@@ -7,7 +7,7 @@ const UTCTime = () => {
     const updateTime = () => {
       setCurrentUTCTime(new Date());
     };
-    const intervalId = setInterval(updateTime, 1000);
+    const intervalId = setInterval(updateTime, 5000);
 
     return () => clearInterval(intervalId);
   }, [currentUTCTime]);
